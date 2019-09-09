@@ -12,7 +12,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <title>AdminLTE 3 | Starter</title>
 
-    <link rel="stylesheet" href="/backend/css/app.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -315,7 +315,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
         </footer>
     </div>
-    <script src="/backend/js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
