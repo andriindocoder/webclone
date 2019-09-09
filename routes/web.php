@@ -15,3 +15,7 @@ Route::get('/',[
     'uses' => 'TampilanDepanController@index',
     'as'    => 'tampilan-depan.index'
 ]);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
