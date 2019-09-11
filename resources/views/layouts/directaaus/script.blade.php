@@ -1,0 +1,1 @@
+<script src={{ asset('/directaaus/js/script.js') }}></script>
