@@ -27,12 +27,18 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'name'     => 'required',
+            'email'    => 'required|email|unique:users',
+            'password' => 'required|string|min:6'
+        ]);
+
         return User::create([
             'name'     => $request['name'],
             'email'    => $request['email'],
             'type'     => $request['type'],
-            'bio'     => $request['bio'],
-            'photo'     => $request['photo'],
+            'bio'      => $request['bio'],
+            'photo'    => $request['photo'],
             'password' => Hash::make($request['password'])
         ]);
     }
