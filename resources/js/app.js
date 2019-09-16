@@ -19,6 +19,13 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
+import VueProgressBar from 'vue-progressbar'
+Vue.use(VueProgressBar, {
+	color: 'rgb(143, 255, 199)',
+	failedColor: 'red',
+	height: '4px'
+})
+
 let routes = [
 	{ path: '/dashboard', component: require('./components/Dashboard.vue').default },
 	{ path: '/users', component: require('./components/Users.vue').default },
